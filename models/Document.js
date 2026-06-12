@@ -4,11 +4,11 @@ const schema = {
     docType: {
         type: String,
         required: true,
-        enum: ['PO', 'INVOICE', 'RECEIPT']
+        enum: ['PO', 'INVOICE', 'GRN']
     },
     originalFileName: String,
     parsedData: {
-        type: mongoose.Schema.type.Mixed,
+        type: mongoose.Schema.Types.Mixed,
         required: true
     },
     createdAt: {
@@ -19,4 +19,4 @@ const schema = {
 
 const documentSchema = new mongoose.Schema(schema)
 
-module.exports = mongoose('Document', documentSchema)
+module.exports = mongoose.model('Document', documentSchema);

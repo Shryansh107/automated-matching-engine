@@ -5,7 +5,7 @@ const { parseDocumentWithGemini } = require('../services/geminiServices')
 
 const router = express.Router()
 
-const uplaod = multer({ storage: multer.memoryStorage() })
+const upload = multer({ storage: multer.memoryStorage() })
 
 router.post('/upload', upload.single('file'), async (req, res) => {
     try {
@@ -14,6 +14,7 @@ router.post('/upload', upload.single('file'), async (req, res) => {
         }
 
         const { docType } = req.body
+
         if (!docType) {
             return res.status(400).json({ error: 'docType is required in form data' })
         }

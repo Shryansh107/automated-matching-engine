@@ -1,6 +1,6 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai")
 
-const genAI = GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 const PROMPT_TEMPLATES = {
     PO: `You are an expert data extractor. Extract the purchase order details from this document. 
@@ -11,18 +11,18 @@ const PROMPT_TEMPLATES = {
             Return only valid JSON with this exact shape: { "invoiceNumber": "", "totalAmount": 0, "dueDate": "" }.
             No extra text.`,
 
-    RECEIPT: `You are an expert data extractor. Extract the receipt details from this document.
+    GRN: `You are an expert data extractor. Extract the receipt details from this document.
             Return only valid JSON with this exact shape: { "storeName": "", "totalPaid": 0, "date": "" }.
             No extra text.`
 };
 
-async function parseDocumentWithGemini() {
+async function parseDocumentWithGemini(fileBuffer, mimeType, docType) {
     const model = genAI.getGenerativeModel({
-        model: "gemini-1.5-flash",
+        model: "gemini-2.5-flash",
         generationConfig: { responseMimeType: "application/json" }
     })
 
-    const prompt = PROMPT_TEMPLATES[docType]
+    const prompt = PROMPT_TEMPLATES[docType?.toUpperCase()]
     if (!prompt) throw new Error("Invalid document type provided")
 
     const filePart = {
@@ -32,10 +32,10 @@ async function parseDocumentWithGemini() {
         }
     }
 
-    const result = await model.generateContext([prompt, filePart])
-    const responseText = result.reponse.text()
+    const result = await model.generateContent([prompt, filePart])
+    const responseText = result.response.text()
 
-    return JSON.parase(responseText)
+    return JSON.parse(responseText)
 }
 
 module.exports = { parseDocumentWithGemini }
