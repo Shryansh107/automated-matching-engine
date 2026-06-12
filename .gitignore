@@ -1,0 +1,52 @@
+# Dependency directories (Never commit these)
+node_modules/
+jspm_packages/
+web_modules/
+
+# Environment variables and secrets (Critical security risk)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Build outputs and production artifacts
+dist/
+build/
+out/
+.next/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Diagnostic reports and dumps
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+crash_dump*.json
+
+# Optional npm cache and lockfiles 
+# (Keep lockfiles like package-lock.json but ignore npm cache)
+.npm
+.eslintcache
+.stylelintcache
+
+# Serverless directories
+.serverless/
+
+# IDE / Editor specific folders
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
