@@ -1,15 +1,13 @@
 require('dotenv').config();
 const express = require('express');
-const mongoose = require('mongoose');
 const documentRoutes = require('./routes/documents')
+const connectDB = require('./config/db');
 
 const app = express();
 
-app.use(express.json())
+connectDB();
 
-mongoose.connect(process.env.MONGODB_URI)
-    .then(() => console.log("Connected to mongo db "))
-    .catch(err => console.error('ould not connect to MongoDB', err))
+app.use(express.json())
 
 app.use('/documents', documentRoutes);
 
