@@ -1,5 +1,6 @@
 const express = require('express')
 const multer = require('multer')
+const Document = require('../models/Document');
 const { parseDocumentWithGemini } = require('../services/geminiServices')
 
 const router = express.Router()
@@ -41,8 +42,14 @@ router.post('/upload', upload.single('file'), async (req, res) => {
 
 router.get('/:id', async (req, res) => {
     try {
-
-    } catch {
-
+        const doc = await Document.findById(req.params.id)
+        if (!doc) {
+            return res.status(404).json({ error: 'Document not found' });
+        }
+        res.json(doc)
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to fetch document' })
     }
-}) 
+})
+
+module.exports = router;
