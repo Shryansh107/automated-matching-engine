@@ -4,16 +4,34 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 const PROMPT_TEMPLATES = {
     PO: `You are an expert data extractor. Extract the purchase order details from this document. 
-       Return only valid JSON with this exact shape: { "poNumber": "", "poDate": "", "vendorName": "", "items": [{ "description": "", "quantity": 0, "price": 0 }] }. 
+       Return only valid JSON with this exact shape:
+       { 
+         "poNumber": "string", 
+         "poDate": "string", 
+         "vendorName": "string", 
+         "items": [{ "itemCode": "string", "description": "string", "quantity": 0 }] 
+       }
        No extra text or explanations.`,
 
     INVOICE: `You are an expert data extractor. Extract the invoice details from this document.
-            Return only valid JSON with this exact shape: { "invoiceNumber": "", "totalAmount": 0, "dueDate": "" }.
-            No extra text.`,
+            Return only valid JSON with this exact shape:
+            { 
+              "invoiceNumber": "string", 
+              "poNumber": "string", 
+              "invoiceDate": "string", 
+              "items": [{ "itemCode": "string", "description": "string", "quantity": 0 }] 
+            }
+            No extra text or explanations.`,
 
-    GRN: `You are an expert data extractor. Extract the receipt details from this document.
-            Return only valid JSON with this exact shape: { "storeName": "", "totalPaid": 0, "date": "" }.
-            No extra text.`
+    GRN: `You are an expert data extractor. Extract the Goods Receipt Note (GRN) details from this document.
+            Return only valid JSON with this exact shape:
+            { 
+              "grnNumber": "string", 
+              "poNumber": "string", 
+              "grnDate": "string", 
+              "items": [{ "itemCode": "string", "description": "string", "receivedQuantity": 0 }] 
+            }
+            No extra text or explanations.`
 };
 
 async function parseDocumentWithGemini(fileBuffer, mimeType, docType) {

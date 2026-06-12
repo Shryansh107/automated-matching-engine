@@ -6,6 +6,11 @@ const schema = {
         required: true,
         enum: ['PO', 'INVOICE', 'GRN']
     },
+    poNumber: {
+        type: String,
+        required: true,
+        index: true
+    },
     originalFileName: String,
     parsedData: {
         type: mongoose.Schema.Types.Mixed,

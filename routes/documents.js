@@ -27,6 +27,7 @@ router.post('/upload', upload.single('file'), async (req, res) => {
 
         const newDocument = new Document({
             docType: docType,
+            poNumber: parsedData.poNumber || parsedData.po_number || '',
             originalFileName: req.file.originalname,
             parsedData: parsedData
         })
@@ -39,6 +40,18 @@ router.post('/upload', upload.single('file'), async (req, res) => {
         res.status(500).json({ error: 'Failed to process document', details: error.message })
     }
 
+})
+
+router.get('/', async (req, res) => {
+    try {
+        const docs = await Document.find().sort({ createdAt: -1 })
+        if (!docs) {
+            return res.status(404).json({ error: 'Document not found' });
+        }
+        res.json(docs)
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to fetch document' })
+    }
 })
 
 router.get('/:id', async (req, res) => {
