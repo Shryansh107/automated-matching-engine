@@ -1,0 +1,162 @@
+{
+  "grnNumber": "CI4000020234",
+  "poNumber": "CI4PO05788",
+  "grnDate": "24-3-2026",
+  "items": [
+    {
+      "itemCode": "11423",
+      "description": "psm Cheesy Spicy Veg Momos 24.0 Pieces",
+      "receivedQuantity": 50
+    },
+    {
+      "itemCode": "11797",
+      "description": "Meatigo Hot Wings 250.0 g",
+      "receivedQuantity": 75
+    },
+    {
+      "itemCode": "18003",
+      "description": "Meatigo Chicken Curry Cut Skinless Frozen 450.0 g",
+      "receivedQuantity": 30
+    },
+    {
+      "itemCode": "18004",
+      "description": "Meatigo Chicken Boneless Breast Frozen 450.0 g",
+      "receivedQuantity": 30
+    },
+    {
+      "itemCode": "205950",
+      "description": "psm Frozen Pork Pepperoni Salami 100.0 g",
+      "receivedQuantity": 40
+    },
+    {
+      "itemCode": "253430",
+      "description": "psm Pork Salami 200.0 g",
+      "receivedQuantity": 75
+    },
+    {
+      "itemCode": "33387",
+      "description": "psm Frozen Chicken Chilli Salami 200.0 g",
+      "receivedQuantity": 75
+    },
+    {
+      "itemCode": "33390",
+      "description": "psm Chicken Seekh Kebab 500.0 g",
+      "receivedQuantity": 272
+    },
+    {
+      "itemCode": "398656",
+      "description": "Meatigo Chicken Drumsticks 450.0 g",
+      "receivedQuantity": 270
+    },
+    {
+      "itemCode": "414867",
+      "description": "psm Chinese Veg Spring Rolls 240.0 g",
+      "receivedQuantity": 25
+    },
+    {
+      "itemCode": "432518",
+      "description": "Meatigo Chicken Kheema 450.0 g",
+      "receivedQuantity": 360
+    },
+    {
+      "itemCode": "4459",
+      "description": "psm Original Chicken Momos 24.0 Pieces",
+      "receivedQuantity": 475
+    },
+    {
+      "itemCode": "4460",
+      "description": "psm Spicy Chicken Momos 24.0 Pieces",
+      "receivedQuantity": 325
+    },
+    {
+      "itemCode": "4461",
+      "description": "psm Veg & Paneer Momos 24.0 Pieces",
+      "receivedQuantity": 75
+    },
+    {
+      "itemCode": "453259",
+      "description": "psm Chicken Cheese & Onion Sausage 250.0 g",
+      "receivedQuantity": 40
+    },
+    {
+      "itemCode": "4694",
+      "description": "psm Original Chicken Momos 10.0 Pieces",
+      "receivedQuantity": 450
+    },
+    {
+      "itemCode": "4697",
+      "description": "psm Veg & Paneer Momos 10.0 Pieces",
+      "receivedQuantity": 400
+    },
+    {
+      "itemCode": "469735",
+      "description": "Meatigo Everyday Chicken Breast (Frozen) 150.0 g",
+      "receivedQuantity": 90
+    },
+    {
+      "itemCode": "4699",
+      "description": "psm Pork Sausage 250.0 g",
+      "receivedQuantity": 40
+    },
+    {
+      "itemCode": "4700",
+      "description": "psm Pork Ham 200.0 g",
+      "receivedQuantity": 50
+    },
+    {
+      "itemCode": "470663",
+      "description": "psm Whole Wheat Momos - Veg & Paneer 330.0 g",
+      "receivedQuantity": 40
+    },
+    {
+      "itemCode": "49168",
+      "description": "psm Peri Peri Veg Momos 15.0 Pieces",
+      "receivedQuantity": 80
+    },
+    {
+      "itemCode": "498695",
+      "description": "psm Chicken Salami 200.0 g",
+      "receivedQuantity": 25
+    },
+    {
+      "itemCode": "507809",
+      "description": "psm Pizza Minis Chicken Tikka 180.0 g",
+      "receivedQuantity": 50
+    },
+    {
+      "itemCode": "598770",
+      "description": "psm Pork Breakfast Bacon 150.0 g",
+      "receivedQuantity": 36
+    },
+    {
+      "itemCode": "6664",
+      "description": "psm Chicken Sausages 250.0 g",
+      "receivedQuantity": 380
+    },
+    {
+      "itemCode": "730016",
+      "description": "psm Whole Wheat Chicken Momos 330.0 g",
+      "receivedQuantity": 80
+    },
+    {
+      "itemCode": "750414",
+      "description": "psm Super Saver Chicken Momo Pack (Chef Momos) 1.0 kg",
+      "receivedQuantity": 72
+    },
+    {
+      "itemCode": "755774",
+      "description": "psm Chicken & Cheese Momos 540.0 g",
+      "receivedQuantity": 25
+    },
+    {
+      "itemCode": "790919",
+      "description": "Meatigo Everyday Fish Fillet 200.0 g",
+      "receivedQuantity": 30
+    },
+    {
+      "itemCode": "81521",
+      "description": "psm Peri Peri Chicken Momos 250.0 g",
+      "receivedQuantity": 640
+    }
+  ]
+}
