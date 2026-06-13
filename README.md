@@ -80,3 +80,32 @@ Because documents can arrive in any order (e.g., Invoice uploaded before PO), th
 ### Tradeoffs
 *   **On-the-fly Calculation vs. Persistent State**: Computing matches on `GET` is highly flexible, but can be slow if there are thousands of items. Persisting state in MongoDB would speed up reads but add writing/concurrency complexity. Given the current requirements, on-the-fly logic provides a cleaner, simpler implementation.
 
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18+)
+- MongoDB running locally or a MongoDB Atlas connection string.
+- Gemini API Key.
+
+### Installation & Run
+
+1. **Clone the repository** and navigate to the project directory.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Configure environment variables**:
+   Create a `.env` file in the root directory:
+   ```env
+   PORT=3000
+   MONGODB_URI=mongodb://localhost:27017/match_engine
+   GEMINI_API_KEY=your_gemini_api_key_here
+   ```
+4. **Start the application**:
+   ```bash
+   npm run dev
+   ```
+   The server will start on port `3000` (or the port specified in your `.env` file).
+
