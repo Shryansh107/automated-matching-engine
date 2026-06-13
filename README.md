@@ -82,6 +82,13 @@ Because documents can arrive in any order (e.g., Invoice uploaded before PO), th
 
 ---
 
+## Future Improvements
+- **Asynchronous / Queue-Based Processing**: Offload slow Gemini API document parsing to a background worker queue (e.g. BullMQ, RabbitMQ) to make file uploads near-instantaneous.
+- **Fuzzy Matching for Items**: Implement Levenshtein Distance or semantic vector embeddings to match item descriptions when exact `itemCode` or keys do not line up perfectly across documents.
+- **Persistent Match Cache**: Cache calculated match outcomes in MongoDB and only recalculate/invalidate them when a new document under that `poNumber` is uploaded.
+
+---
+
 ## Getting Started
 
 ### Prerequisites
