@@ -38,8 +38,8 @@ async function calculateMatch(poNumber) {
 
     // Initialize tracker with PO items
     (po.parsedData.items || []).forEach(item => {
-        // Standardize keys (e.g., lowercase description or SKU) to match across docs
-        const itemKey = (item.sku || item.description || 'unknown').toLowerCase().trim();
+        // Standardize keys (e.g., lowercase itemCode/SKU or description) to match across docs
+        const itemKey = (item.itemCode || item.sku || item.description || 'unknown').toLowerCase().trim();
         itemTracker[itemKey] = {
             poQty: item.quantity || 0,
             grnQty: 0,
@@ -50,11 +50,11 @@ async function calculateMatch(poNumber) {
     // Add GRN quantities to the tracker
     grns.forEach(grn => {
         (grn.parsedData.items || []).forEach(item => {
-            const itemKey = (item.sku || item.description || 'unknown').toLowerCase().trim();
+            const itemKey = (item.itemCode || item.sku || item.description || 'unknown').toLowerCase().trim();
             if (!itemTracker[itemKey]) {
                 reasons.add('item_missing_in_po');
             } else {
-                itemTracker[itemKey].grnQty += (item.quantity || 0);
+                itemTracker[itemKey].grnQty += (item.receivedQuantity || item.quantity || 0);
             }
         });
     });
@@ -62,7 +62,7 @@ async function calculateMatch(poNumber) {
     // Add Invoice quantities to the tracker
     invoices.forEach(inv => {
         (inv.parsedData.items || []).forEach(item => {
-            const itemKey = (item.sku || item.description || 'unknown').toLowerCase().trim();
+            const itemKey = (item.itemCode || item.sku || item.description || 'unknown').toLowerCase().trim();
             if (!itemTracker[itemKey]) {
                 reasons.add('item_missing_in_po');
             } else {
