@@ -1,0 +1,207 @@
+{
+  "poNumber": "CI4PO05788",
+  "poDate": "Mar 17, 2026",
+  "vendorName": "M/s AFP",
+  "items": [
+    {
+      "description": "psm Cheesy Spicy Veg Momos 24.0 Pieces Colour: Size: size Brand:Band 2",
+      "quantity": 50,
+      "price": 220.762
+    },
+    {
+      "description": "Meatigo Hot Wings 250.0 g Colour: Size: size Brand:Band_3",
+      "quantity": 75,
+      "price": 126.667
+    },
+    {
+      "description": "Meatigo Chicken Curry Cut Skin less Frozen 450 .0 g Colour: Size: size Brand:Band_1",
+      "quantity": 120,
+      "price": 141.143
+    },
+    {
+      "description": "Meatigo Chicken Boneless Breast Frozen 450.0 g Colour: Size: size Brand:Band_1",
+      "quantity": 540,
+      "price": 199.048
+    },
+    {
+      "description": "psm Spring Rolls Veg Frozen 240.0 g Colour: Size: size Brand:Band_4",
+      "quantity": 175,
+      "price": 123.048
+    },
+    {
+      "description": "psm Pork Salami 200.0 g Colour: Size: size Brand:",
+      "quantity": 75,
+      "price": 188.19
+    },
+    {
+      "description": "psm Frozen Chicken Chilli Salami 200.0 g Colour: Size: size Brand:TORSO",
+      "quantity": 75,
+      "price": 126.667
+    },
+    {
+      "description": "psm Frozen Chicken Pepperoni Salami 100.0 g Colour: Size: size Brand:Band 3",
+      "quantity": 120,
+      "price": 108.571
+    },
+    {
+      "description": "psm Chicken Seekh Kebab 500.0 g Colour: Size: size Brand:Band_3",
+      "quantity": 272,
+      "price": 228
+    },
+    {
+      "description": "Meatigo Chicken Drumsticks 450 .0 g Colour: Size: size Brand:",
+      "quantity": 270,
+      "price": 188.19
+    },
+    {
+      "description": "psm Chinese Veg Spring Rolls 240.0 g Colour: Size: size Brand:",
+      "quantity": 25,
+      "price": 119.429
+    },
+    {
+      "description": "Meatigo Chicken Kheema 450.0 g Colour: Size: size Brand:",
+      "quantity": 360,
+      "price": 199.048
+    },
+    {
+      "description": "psm Original Chicken Momos 24.0 Pieces Colour: Size: size Brand:Band_1",
+      "quantity": 475,
+      "price": 220.762
+    },
+    {
+      "description": "psm Spicy Chicken Momos 24 .0 Pieces Colour: Size: size Brand:Band 1",
+      "quantity": 325,
+      "price": 220.762
+    },
+    {
+      "description": "psm Veg & Paneer Momos 24. 0 Pieces Colour: Size: size Brand:Band_2",
+      "quantity": 75,
+      "price": 202.667
+    },
+    {
+      "description": "psm Chicken Cheese & Onion Sausage 250.0 g Colour: Size: size Brand:",
+      "quantity": 40,
+      "price": 144.762
+    },
+    {
+      "description": "psm Original Chicken Momos 10.0 Pieces Colour: Size: size Brand:Band_4",
+      "quantity": 450,
+      "price": 133.905
+    },
+    {
+      "description": "psm Spicy Chicken Momos 10 .0 Pieces Colour: Size: size Brand:Band_3",
+      "quantity": 100,
+      "price": 133.905
+    },
+    {
+      "description": "psm Veg & Paneer Momos 10. 0 Pieces Colour: Size: size Brand:Band 2",
+      "quantity": 400,
+      "price": 112.19
+    },
+    {
+      "description": "Meatigo Everyday Chicken Breast (Frozen) 150. 0 g Colour: Size: size Brand:",
+      "quantity": 90,
+      "price": 119.429
+    },
+    {
+      "description": "psm Chicken Ham 200.0 g Colour: Size: size Brand:Band 1",
+      "quantity": 150,
+      "price": 133.905
+    },
+    {
+      "description": "psm Pork Sausage 250.0 g Colour: Size: size Brand:Band_2",
+      "quantity": 40,
+      "price": 170.095
+    },
+    {
+      "description": "psm Pork Ham 200.0 g Colour: Size: size Brand:Band 1",
+      "quantity": 50,
+      "price": 177.333
+    },
+    {
+      "description": "psm Pork Breakfast Bacon 3 00.0 g Colour: Size: size Brand:Band_1",
+      "quantity": 20,
+      "price": 267.81
+    },
+    {
+      "description": "psm Whole Wheat Momos - Veg & Paneer 330. 0 g Colour: Size: size Brand:",
+      "quantity": 80,
+      "price": 162.857
+    },
+    {
+      "description": "psm Tandoori Momos - Chicken 280.0 g Colour: Size: size Brand:",
+      "quantity": 35,
+      "price": 159.238
+    },
+    {
+      "description": "psm Peri Peri Veg Momos 15 .0 Pieces Colour: Size: size Brand:Band_2",
+      "quantity": 80,
+      "price": 88.667
+    },
+    {
+      "description": "psm Chicken Salami 200.0 g Colour: Size: size Brand:",
+      "quantity": 25,
+      "price": 137.524
+    },
+    {
+      "description": "psm Chicken Pepper & Herb Sausage 250.0 g Colour: Size: size Brand:",
+      "quantity": 20,
+      "price": 141.143
+    },
+    {
+      "description": "psm Pork Breakfast Bacon 150.0 g Colour: Size: size Brand:",
+      "quantity": 36,
+      "price": 152
+    },
+    {
+      "description": "psm Chicken Sausages 250.0 g Colour: Size: size Brand:Band_2",
+      "quantity": 380,
+      "price": 130.286
+    },
+    {
+      "description": "psm Chicken Cheese & Chilli Sausages 250. 0 g Colour: Size: size Brand:Band_3",
+      "quantity": 100,
+      "price": 133.905
+    },
+    {
+      "description": "psm Whole Wheat Chicken Momos 330.0 g Colour: Size: size Brand:",
+      "quantity": 80,
+      "price": 170.095
+    },
+    {
+      "description": "psm Super Saver Chicken Momo Pack (Chef Momos) 1.0 kg Colour: Size: size Brand:",
+      "quantity": 72,
+      "price": 247.619
+    },
+    {
+      "description": "psm Chicken & Cheese Momos 540.0 g Colour: Size: size Brand:",
+      "quantity": 25,
+      "price": 238.857
+    },
+    {
+      "description": "Meatigo Everyday Fish Fillet 200.0 g Colour: Size: size Brand:",
+      "quantity": 30,
+      "price": 188.19
+    },
+    {
+      "description": "psm Peri Peri Chicken Momos 250.0 g Colour: Size: size Brand:Band_4",
+      "quantity": 640,
+      "price": 72.019
+    },
+    {
+      "description": "psm Chicken English Breakfast Sausage 1.0 kg Colour: Size: size Brand:Band 2",
+      "quantity": 162,
+      "price": 222.857
+    },
+    {
+      "description": "psm Frozen Pork Pepperoni Salami 100.0 g Colour: Size: size Brand:Band_5",
+      "quantity": 40,
+      "price": 133.905
+    },
+    {
+      "description": "psm Pizza Minis Chicken Tikka 180.0 g Colour: Size: size Brand:Band_6",
+      "quantity": 50,
+      "price": 115.086
+    }
+  ]
+}

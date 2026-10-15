@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "8c59f0f9-6799-4d64-9279-7a76c666de60",
+		"name": "shryansh-finifi-assignemnt",
+		"description": "API requests for the Three-Way Match Engine Assignment.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload Document",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "docType",
+							"value": "PO",
+							"type": "text",
+							"description": "Values can be PO, GRN, or INVOICE"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/documents/upload",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"documents",
+						"upload"
+					]
+				},
+				"description": "Uploads a document (PDF, PNG, JPG) to parse using Gemini and store in MongoDB. Supported types are PO, GRN, and INVOICE."
+			},
+			"response": []
+		},
+		{
+			"name": "Get Parsed Document By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/documents/:id",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"documents",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "64bfca16be608fa440a82b01",
+							"description": "The unique document object ID stored in MongoDB"
+						}
+					]
+				},
+				"description": "Retrieves the parsed document details by its database ID."
+			},
+			"response": []
+		},
+		{
+			"name": "Get Match Status by PO Number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/match/:poNumber",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"match",
+						":poNumber"
+					],
+					"variable": [
+						{
+							"key": "poNumber",
+							"value": "PO-12345",
+							"description": "Purchase Order Number to retrieve match status for"
+						}
+					]
+				},
+				"description": "Calculates and returns the latest three-way match status and mismatch reasons for a given PO number."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
